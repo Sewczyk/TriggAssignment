@@ -1,5 +1,5 @@
-@RestResource(urlMapping='/Opportunity/*')
-global with sharing class OpportunityManagementService {
+@RestResource(urlMapping='/v2/Opportunity/*')
+global class OppRESTManagement {
     @HttpDelete
     global static void deleteOpportunity(){
         RestRequest request = RestContext.request;

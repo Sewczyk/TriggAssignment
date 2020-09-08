@@ -19,8 +19,9 @@ public class OpportunityTriggerHandlerTest {
             opptysList.add(oppAcc1);
             opptysList.add(oppAcc2);
         }
-        
+        System.debug(JSON.serializePretty(opptysList));
         insert opptysList;
+        System.debug('Dupa');
 
         List<Opportunity> fetchedOpportunities = [SELECT ID, StageName, Name, AccountId FROM Opportunity];
         System.assertEquals(10, fetchedOpportunities.size());
