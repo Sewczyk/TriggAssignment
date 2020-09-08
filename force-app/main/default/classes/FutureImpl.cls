@@ -4,7 +4,7 @@ public class FutureImpl implements IOppJobService {
         futureMethod(oppToDelete);
     }
 
-    @Future
+    @Future(callout=true)
     public static void futureMethod(Id idOpportunityToDelete){
         RequestHelper.runRequest(idOpportunityToDelete);
     }
