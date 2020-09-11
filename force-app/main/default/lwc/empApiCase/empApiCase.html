@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="EmpApi Cases to accounts">
+        <div class="slds-m-around_medium">
+            <lightning-input 
+                label="Cases Event Channel" 
+                value={casesEventChannel} 
+                onchange={handleCasesEventChannel}>
+            </lightning-input>
+            <lightning-button 
+                variant="success" 
+                label="Subscribe" 
+                title="Subscribe"
+                onclick={handleSubscribe} 
+                disabled={isSubscribeDisabled}>
+            </lightning-button>
+            <lightning-button
+                variant="destructive"
+                label="Unsubscribe"
+                title="Unsubscribe"
+                onclick={handleUnsubscribe}
+                disabled={isUnsubscribeDisabled}>
+            </lightning-button>
+        </div>
+    </lightning-card>
+    
+</template>
