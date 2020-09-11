@@ -1,4 +1,4 @@
-public with sharing class QueuableJob implements Queueable {
+public with sharing class QueuableJob implements Queueable, Database.AllowsCallouts {
 
     private Id varIdOpportunityToDelete;
 

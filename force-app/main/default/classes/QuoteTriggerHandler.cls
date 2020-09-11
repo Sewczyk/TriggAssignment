@@ -1,4 +1,4 @@
-public class QuoteTriggerHandler implements ITriggerHandler {
+public with sharing class QuoteTriggerHandler {
 
     public static Boolean IsDisabled = false;
 
