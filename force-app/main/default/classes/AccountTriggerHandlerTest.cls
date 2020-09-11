@@ -39,7 +39,7 @@ private class AccountTriggerHandlerTest {
       }
     Test.stopTest();
 
-    System.assertEquals(2, exceptions.size());
+    System.assertEquals(1, exceptions.size());
     for(Boolean exceptionThrown : exceptions){
       System.assert(exceptionThrown);
     }
